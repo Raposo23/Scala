@@ -10,6 +10,8 @@ This exercise was solved taking into account the following information:
 
 4) Added the condition that only the user defined interval is allowed to be at least one year.
 
-Results:
+5) Only the oldest product of each order is being considered.
+
+Example result:
 
 ![image](https://user-images.githubusercontent.com/36168431/141530220-e64d8107-75fd-41f5-87c7-afef3888f372.png)
