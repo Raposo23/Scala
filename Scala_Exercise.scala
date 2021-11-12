@@ -103,8 +103,8 @@ class Order(val name:String, val contact:String, val address:String, val total:D
   }
 
   def randomDate(): Date = {
-    val inicio = new SimpleDateFormat("yyyy-MM-dd").parse("2015-01-01 00:00:00").getTime()
-    val fim = new SimpleDateFormat("yyyy-MM-dd").parse("2022-11-12 00:00:00").getTime()
+    val inicio = new SimpleDateFormat("yyyy-MM-dd").parse("2015-01-01").getTime()
+    val fim = new SimpleDateFormat("yyyy-MM-dd").parse("2022-11-12").getTime()
     val rand = Random.between(inicio, fim)
 
     return new Date(rand)
@@ -152,7 +152,7 @@ class Product(val name:String,val category:String,val weight:Double, val price:D
   override def toString():String = "["+name+"|"+creationDate+"]"
 
   def randomDate(): Date = {
-    val inicio = new SimpleDateFormat("yyyy-MM-dd").parse("2020-01-01 00:00:00").getTime()
+    val inicio = new SimpleDateFormat("yyyy-MM-dd").parse("2020-01-01").getTime()
     val fim = (new Date().getTime())
     val rand = Random.between(inicio, fim)
 
