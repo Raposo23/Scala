@@ -70,7 +70,6 @@ object Scala_Exercise{
     for(order <- 1 to 400){
       orders.append(new Order())
     }
-    //    println(orders)
     return(orders)
   }
 
@@ -79,7 +78,6 @@ object Scala_Exercise{
     for(a <- orders){
       prod.append(a.oldDate())
     }
-    //    println(prod)
     return prod
   }
 }
